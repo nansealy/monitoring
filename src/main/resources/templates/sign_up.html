@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sign Up</title>
+    <div th:replace="fragments/master :: masterHead"></div>
+    <link rel="stylesheet" th:href="@{/style/page_style/sign_up_page.css}"/>
+</head>
+<body ontouchstart="">
+<div align="center" class="centredModalView">
+    <h1>Sign Up</h1>
+    <div th:replace="fragments/validation_error_message :: errorMessageContainer"></div>
+    <input autocomplete="new-password" id="usernameField" placeholder="Username" type="text">
+    <input autocomplete="new-password" id="emailField" placeholder="Email" type="text">
+    <input autocomplete="new-password" id="passwordField" onfocus="this.setAttribute('type', 'password')"
+           placeholder="Password"
+           type="text">
+    <input autocomplete="new-password" id="repeatedPasswordField" onfocus="this.setAttribute('type', 'password')"
+           placeholder="Repeat password"
+           type="text">
+    <button id="signUp">Sign Up</button>
+    <a href="/auth/sign_in">Sign In</a>
+</div>
+</body>
+<script th:src="@{/script/master/liquid_animation.js}" type="text/javascript"></script>
+<script th:src="@{/script/page/sign_up.js}" type="text/javascript"></script>
+<script th:src="@{/script/util/validation.js}" type="text/javascript"></script>
+<script th:src="@{/script/element/errorMessage.js}" type="text/javascript"></script>
+</html>

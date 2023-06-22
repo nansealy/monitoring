@@ -1,0 +1,45 @@
+.gridListItem {
+    z-index: 5000;
+    position: relative;
+    display: inline-block;
+    height: 190px;
+    width: 150px;
+    margin: 5px 2px;
+    background-color: #262636;
+    border-radius: 20px;
+    opacity: 0.8;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.gridListItem:active {
+    background-color: #4EB8E0;
+}
+
+.gridListItemCount {
+    position: relative;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    top: 10px;
+    border-radius: 20px;
+    font-size: 90px;
+    color: #E2574C !important;
+}
+
+.gridListItemTitle {
+    position: absolute;
+    display: -webkit-box;
+    height: 56px;
+    width: 120px;
+    left: calc(50% - 70px);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 18px;
+}

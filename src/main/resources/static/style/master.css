@@ -1,0 +1,66 @@
+@import "font.css";
+@import "ui_element/button.css";
+@import "ui_element/input.css";
+
+
+body {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:  #FEE3A2;
+    overflow: hidden hidden;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0px;
+}
+
+a {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14.5px;
+    color:  #87C159;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+
+* {
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+svg {
+    fill: #87C159;
+}
+
+svg:active {
+    fill: #52c4ef;
+}
+
+.confirm {
+    background-color: #4EB8E0;
+    opacity: 0.8;
+}
+
+.control {
+    color: #5c5c5c;
+}
+
+iframe {
+    border-width: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow: scroll;
+}

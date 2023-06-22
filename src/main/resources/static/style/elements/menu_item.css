@@ -1,0 +1,25 @@
+
+.menuItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.menuItem:active {
+    background: #4EB8E0;
+}
+
+.menuItemIcon {
+    position: absolute;
+    dispaly: inline-block;
+    left: 10px;
+    top: 6px;
+    height: 18px;
+    width: 18px;
+}
+
+.menuItem > h4 {
+    position: absolute;
+    left: 30px;
+}

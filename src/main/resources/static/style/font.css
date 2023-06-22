@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+h1, h2, h3, h4, text, span {
+    color:  #87C159;
+    margin: 5px 5px;
+}

@@ -1,0 +1,38 @@
+@import "../elements/centred_modal_view.css";
+@import "../elements/validation_error_message.css";
+
+
+.centredModalView > h1 {
+    margin-top: 14%;
+    margin-bottom: 13%;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 10px 10px;
+}
+
+.linkWrapper {
+    height: 25px;
+}
+
+@media (min-width: 600px) {
+    .linkWrapper {
+        height: 55px;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 600px) {
+    .centredModalView {
+        width: 280px;
+    }
+}
+
+@media (max-width: 340px) {
+    .centredModalView {
+        width: 220px;
+    }
+}

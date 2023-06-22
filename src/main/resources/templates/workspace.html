@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Workspace</title>
+    <meta th:replace="fragments/master :: masterHead"/>
+    <link rel="stylesheet" th:href="@{/style/page_style/workspace_page.css}">
+</head>
+<body ontouchstart="">
+<iframe class="workspace" id="workspace" src="/frame/dashboard_frame"></iframe>
+<div th:replace="fragments/header :: header"></div>
+<div th:replace="fragments/workspace_scripts :: scripts"></div>
+</body>
+</html>

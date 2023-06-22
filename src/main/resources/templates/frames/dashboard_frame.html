@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style/frame/session_frame.css}"/>
+    <script th:src="@{/script/jquery/JQuery.js}"></script>
+</head>
+<body>
+<div class="infoField" id="infoField">Select item to remove. Click here to cancel</div>
+<div class="workspaceHead">
+    <h1 id="title">Dashboards</h1>
+    <button id="addButton">
+        <svg height="15pt" style="enable-background:new 0 0 409.6 409.6;" version="1.1" viewBox="0 0 409.6 409.6"
+             width="15pt" x="0px"
+             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+		        <path d="M392.533,187.733H221.867V17.067C221.867,7.641,214.226,0,204.8,0s-17.067,7.641-17.067,17.067v170.667H17.067
+			C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h170.667v170.667c0,9.426,7.641,17.067,17.067,17.067
+			s17.067-7.641,17.067-17.067V221.867h170.667c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z"></path>
+            </svg>
+    </button>
+    <svg height="15pt" id="editButton" viewBox="0 0 515.555 515.555" width="15pt"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/>
+        <path d="m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/>
+        <path d="m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0"/>
+    </svg>
+    <div th:replace="fragments/header :: editMenu"></div>
+</div>
+<div id="listItemContainer"></div>
+<div th:replace="fragments/popups :: create_popup"></div>
+</body>
+<div th:replace="frames/frag/dashboard_frame_fragments :: scripts"></div>
+</html>

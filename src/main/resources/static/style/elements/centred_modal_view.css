@@ -1,0 +1,12 @@
+.centredModalView {
+    width: 325px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    padding-bottom: 5px;
+    background-color: #F3C301;
+    border-radius: 25px;
+    z-index: 1000;
+}

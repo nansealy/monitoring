@@ -1,0 +1,17 @@
+@import "menu_item.css";
+
+
+#menu {
+    display: none;
+    position: fixed;
+    right: 2%;
+    top: 55px;
+    height: 60px;
+    width: 130px;
+    border-radius: 10px;
+    background: #1e1e30;
+}
+
+.menuItem:active {
+    background: #4EB8E0;
+}

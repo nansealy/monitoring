@@ -1,0 +1,23 @@
+.popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 100000;
+    border-radius: 20px;
+    background-color:  #F3C301;
+    opacity: 0.93;
+    display: none;
+    max-width: 300px;
+}
+
+.popup > * {
+    position: relative;
+    margin: 5px 23px 8px;
+    text-align: center;
+}
+
+.popup > input {
+    width: 55vw;
+    max-width: 245px;
+}

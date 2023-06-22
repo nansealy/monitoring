@@ -1,0 +1,20 @@
+.workspace {
+    position: fixed;
+    top: 50px;
+    z-index: 500;
+    height: calc(100% - 50px);
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: auto;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+
+@media (max-width: 760px) {
+    .workspace {
+        width: 100%;
+        left: 0px;
+        transform: none;
+    }
+}

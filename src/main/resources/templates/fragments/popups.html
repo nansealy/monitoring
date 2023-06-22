@@ -1,0 +1,8 @@
+<div class="popup" id="popup" th:fragment="create_popup" xmlns:th="http://www.thymeleaf.org">
+    <div th:replace="fragments/validation_error_message :: errorMessageContainer"></div>
+    <input id="titleField" placeholder="Title" type="text"/>
+    <input id="urlField" placeholder="Database URL" type="text"/>
+    <input id="usernameField" placeholder="username" type="text"/>
+    <input id="passwordField" placeholder="password" type="text"/>
+    <button class="confirm" id="createButton">Ok</button>
+</div>
